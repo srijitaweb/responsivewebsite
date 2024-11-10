@@ -1,0 +1,100 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #340fe9;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #cfcaca;
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+}
+
+.hero {
+  background-image: linear-gradient(to bottom, #333, #555);
+  color: #fff;
+  padding: 2em;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 36px;
+}
+
+.featured-dogs {
+  padding: 2em;
+}
+
+.dog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.dog-card {
+  background-color: #b80995;
+  padding: 1em;
+  border: 1px solid #f3e2e2;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.dog-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.dog-card h3 {
+  font-size: 18px;
+  margin-top: 0;
+}
+
+footer {
+  background-color: #333;
+  color: #0e0101;
+  padding: 1em;
+  text-align: center;
+  clear: both;
+}
+
+/* Responsive design */
+
+@media only screen and (max-width: 768px) {
+  .dog-grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .dog-grid {
+      grid-template-columns: 1fr;
+  }
+}
+
